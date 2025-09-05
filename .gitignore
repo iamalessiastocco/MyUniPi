@@ -1,0 +1,61 @@
+# Dipendenze
+node_modules/
+
+# File di ambiente
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# File di sistema Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# File di sistema macOS (se collaborano sviluppatori con macOS)
+.DS_Store
+
+# File di build
+build/
+dist/
+
+# File di log e cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# File di IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# File di React Native
+/android/
+/ios/
+*.apk
+*.ipa
+*.keystore
+
+# File di Docker (se non usi Docker, puoi ignorare)
+.dockerignore
+Dockerfile
+docker-compose.override.yml
+docker-compose.yml
+
+# File di cache di Composer (se hai un backend PHP)
+vendor/
+composer.lock
+
+# File di cache di Android Studio
+*.iml
+.gradle/
+local.properties
+.cxx/
+*.so
+build/
+captures/
+output.json
+ 
