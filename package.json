@@ -10,11 +10,14 @@
     "dev": "concurrently \"npm run dev:web\" \"npm run dev:mobile\" \"npm run dev:api\"",
     "dev:web": "cd apps/web && npm run dev",
     "dev:mobile": "cd apps/mobile && npm run start",
-    "dev:api": "cd apps/api && php artisan serve",
+    "dev:api": "cd apps/api && php -S localhost:9000 -t public",
     "build": "npm run build:web && npm run build:mobile",
     "test": "npm run test:web && npm run test:mobile && npm run test:api"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
   }
 }
